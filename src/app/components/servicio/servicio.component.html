@@ -1,0 +1,27 @@
+<div class="container">
+    <h1 class="m-4">Servicio RestCountries</h1>
+    <hr>
+    <table *ngIf="paises!=null; else espera"
+        class="table text-light table-bordered text-center">
+        <thead>
+            <tr>
+                <th class="display-6">PAÍS</th>
+                <th class="display-6">CAPITAL</th>
+                <th class="display-6">POBLACIÓN</th>
+                <th class="display-6">BANDERA</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let pais of paises">
+                <td class="h5">{{pais.name.common}}</td>
+                <td class="h5">{{pais.capital}}</td>
+                <td class="h5">{{pais.population}}</td>
+                <td><img src="{{pais.flags.png}}" width="150px" /></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<ng-template #espera>
+    Esperando datos...
+</ng-template>
+

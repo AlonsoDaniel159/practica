@@ -1,0 +1,26 @@
+<div class="container">
+    <h1 class="m-4">HEROES</h1>
+    <hr>
+    <table class="table text-light table-bordered text-center">
+        <thead>
+            <tr>
+                <th class="h4">ID</th>
+                <th class="h4">SUPERHEROE</th>
+                <th class="h4">EDITORIAL</th>
+                <th class="h4">PRIMERA APARICIÓN</th>
+                <th class="h4">ALTER EGO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let heroe of heroes">
+                <td class="h6">{{heroe.id}}</td>
+                <td class="h6">{{heroe.superhero}}</td>
+                <td class="h6">{{heroe.publisher}}</td>
+                <td class="h6">{{heroe.first_appearance}}</td>
+                <td class="h6">{{heroe.characters}}</td>
+            </tr>
+        </tbody>
+    </table> 
+</div>
+
+

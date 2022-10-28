@@ -1,0 +1,24 @@
+<div class="container">
+    <h1 class="m-4">USUARIOS</h1>
+    <hr>
+    <table class="table text-light table-bordered text-center">
+        <thead>
+            <tr>
+                <th class="h4">ID</th>
+                <th class="h4">USUARIO</th>
+                <th class="h4">EMAIL</th>
+                <th class="h4">TELÉFONO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let usuario of usuarios">
+                <td class="h6">{{usuario.id}}</td>
+                <td class="h6">{{usuario.usuario}}</td>
+                <td class="h6">{{usuario.email}}</td>
+                <td class="h6">{{usuario.telefono}}</td>
+            </tr>
+        </tbody>
+    </table> 
+</div>
+
+
